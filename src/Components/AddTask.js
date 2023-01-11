@@ -10,6 +10,8 @@ function AddTask(props) {
     const submit = (e) => {
         e.preventDefault();
         props.addTodo(title, desc); // Passing title and desc to add new Task
+        setTitle("");
+        setDesc("");
     }
 
     return (
